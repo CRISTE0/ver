@@ -1,0 +1,458 @@
+/*CSS De Admin */
+
+/* Boton File Crear Camiseta */
+
+.container-input {
+  text-align: center;
+  background: rgb(121, 121, 121);
+  padding: 50px 0;
+  border-radius: 6px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  max-width: 80%;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 2px 12px;
+}
+
+.inputfile + label svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+  margin-right: 0.25em;
+}
+
+.iborrainputfile {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Lato";
+}
+
+.inputfile-5 + label {
+  color: rgb(119, 195, 165);
+}
+
+.inputfile-5:focus + label,
+.inputfile-5.has-focus + label,
+.inputfile-5 + label:hover {
+  color: #1cab6898;
+}
+
+.inputfile-5 + label figure {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(119, 195, 172);
+  display: block;
+  padding: 20px;
+  margin: 0 auto 10px;
+}
+
+.inputfile-5:focus + label figure,
+.inputfile-5.has-focus + label figure,
+.inputfile-5 + label:hover figure {
+  background-color: #659f7a;
+}
+
+.inputfile-5 + label svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+/* Boton File Crear Camiseta */
+
+/* Boton File Editar Camiseta */
+.inputfile-1 + label {
+  color: #fff;
+  background-color: #dbdbdb;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+  background-color: #9e9e9e;
+}
+/* Boton File Editar Camiseta */
+
+/* CheckBox Camiseta */
+
+.checkbox {
+  align-items: flex-start;
+}
+
+.mycheckbox input:checked ~ span::after {
+  background: rgb(12, 167, 12);
+  transform: scale(0.85) translate(35px);
+}
+
+.mycheckbox input:checked ~ span .on {
+  transform: translate(30px);
+  opacity: 1;
+}
+
+.mycheckbox input:checked ~ span .off {
+  transform: translate(30px);
+  opacity: 0;
+}
+
+.mycheckbox input:checked ~ span .on-bell {
+  transform: translate(31px);
+}
+
+.mycheckbox input {
+  display: none;
+}
+
+.mycheckbox span {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  background: rgb(187, 186, 186);
+  cursor: pointer;
+  box-shadow: inset 0px 0px 2px rgb(15, 15, 15);
+
+  position: relative;
+}
+
+.mycheckbox span::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  transform: scale(0.85);
+  border-radius: 30px;
+  background: rgb(248, 22, 22);
+  transition: 0.5s;
+  box-shadow: inset 0px 0px 2px rgb(37, 37, 37);
+}
+
+.mycheckbox i {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  z-index: 1;
+  color: white;
+  transition: 0.5s;
+}
+
+.mycheckbox .on {
+  opacity: 0;
+  left: 7px;
+  top: 7px;
+}
+
+.mycheckbox .off {
+  left: 9px;
+  top: 7px;
+}
+
+.mycheckbox .off-bell {
+  left: 5px;
+}
+
+/* CheckBox Camiseta */
+
+/* Agrega un estilo al botón de "Seleccionar Estado" */
+#estadoDropdown {
+  border: 2px solid;
+  /* Color del borde (verde en este ejemplo) */
+}
+
+#estadoClienteDropdown {
+  border: 2px solid;
+}
+
+.black-icon {
+  color: black;
+  transition: color 0.3s ease;
+  /* Agrega una transición para suavizar el cambio de color */
+}
+
+.black-icon:hover {
+  color: #007bff;
+  /* Cambia el color a azul (#007bff) cuando se pasa el ratón sobre el icono */
+}
+
+h5 {
+  color: black;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  border: 1px solid #858796; /* Borde gris */
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #858796; /* Texto gris */
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s,
+    box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+  background-color: #f8f9fa; /* Color de fondo claro */
+}
+
+.page-link:hover {
+  background-color: #858796; /* Color gris al pasar el cursor */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.page-item.active .page-link {
+  background-color: #858796; /* Fondo gris para el enlace activo */
+  color: white; /* Texto blanco para el enlace activo */
+  border-color: #858796;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d; /* Color gris claro para el enlace deshabilitado */
+  pointer-events: none;
+  cursor: default;
+}
+
+.page-item.disabled .page-link:hover {
+  background-color: transparent; /* Asegura que no cambie de color */
+  color: #6c757d;
+}
+
+.page-link {
+  font-size: 14px; /* Ajusta el tamaño del texto */
+  padding: 8px 16px; /* Ajusta el espaciado interno */
+}
+
+input.Buscador {
+  padding: 5px; /* Reducir el padding */
+  margin-top: 5px;
+  margin-right: auto; /* Empuja el campo de búsqueda hacia la izquierda */
+  border: 1px solid #ccc;
+  border-radius: 15px; /* Reducir el radio de los bordes */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: all 0.3s ease; /* Transición suave para los cambios */
+}
+
+input.Buscador:focus {
+  border-color: #007bff; /* Cambio de color del borde al enfocarse */
+  box-shadow: 0 3px 6px rgba(0, 123, 255, 0.2); /* Reducir la sombra al enfocarse */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input[type="checkbox"]:checked + .slider {
+  background-color: #4caf50; /* Color verde cuando está activo */
+}
+
+.switch input[type="checkbox"]:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.switch input[type="checkbox"]:not(:checked) + .slider {
+  background-color: #f44336; /* Color rojo cuando está inactivo */
+}
+
+/* Nuevo estilo para el estado gris */
+.switch-grey .slider {
+  background-color: grey !important; /* Color gris cuando el estado no es activo */
+}
+
+.switch input[type="checkbox"]:focus + .slider {
+  box-shadow: 0 0 1px #20c9a6;
+}
+
+/* Estilos para el modal */
+.modal-header {
+  background-color: #20c9a6;
+  color: #ffffff;
+}
+
+.modal-header .modal-title {
+  font-size: 1.25rem;
+}
+
+.modal-body {
+  padding: 1rem 2rem;
+}
+
+.modal-footer {
+  border-top: none;
+  padding: 1rem 2rem;
+}
+
+/* Estilos para los botones */
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-primary {
+  background-color: #20c9a6;
+  border-color: #20c9a6;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #26af94;
+  border-color: #20c9a6;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #545b62;
+  border-color: #545b62;
+}
+
+.switch-permiso {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+
+.switch-permiso input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-permiso {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider-permiso:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider-permiso {
+  background-color: #28a745; /* Color de fondo cuando está activo */
+}
+
+input:checked + .slider-permiso:before {
+  transform: translateX(16px); /* Posición del indicador cuando está activo */
+}
+
+.small-alert {
+  width: 250px; /* Ajusta el tamaño de la alerta */
+  font-size: 14px; /* Ajusta el tamaño del texto */
+  color: black;
+}
+
+.swal2-popup.swal2-toast {
+  background: #05cea4 !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #169b6a;
+  background-color: #1cc88a;
+}
+
+#descargarApp{
+  text-decoration: none;
+}
+
+
+#descargarApp:hover{
+  color: #1cc88a;
+}
+
+
+
+@media (max-width: 575.98px) {
+  .btn-dark {
+    width: 40px; /* Ancho fijo para hacerlo cuadrado */
+    height: 40px; /* Altura fija para hacerlo cuadrado */
+  }
+
+  .btn-dark span {
+    display: none; /* Ocultar el texto del botón */
+  }
+
+  .btn-dark i {
+    margin: 0; /* Asegurar que el ícono esté centrado */
+  }
+}
