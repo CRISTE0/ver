@@ -1,4 +1,4 @@
-# React + Vite
+# Esto es una cochinada, ya nose que hacer :(
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
